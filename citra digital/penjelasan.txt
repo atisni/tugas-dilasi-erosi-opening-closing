@@ -1,0 +1,43 @@
+Gambar A.jpeg (biji beras tersebar)
+Tujuan:
+Memisahkan objek biji beras dan mengurangi noise kecil.
+
+Analisis metode:
+
+Erosi: Mengecilkan biji, beberapa biji hilang atau rusak. Tidak cocok.
+
+Dilasi: Membesarkan biji, biji yang menempel makin menyatu. Tidak cocok.
+
+Opening: Menghilangkan noise kecil dan memisahkan biji yang menempel. Cocok.
+
+Closing: Menyambungkan bagian biji yang putus-putus. Kurang efektif untuk tujuan ini.
+
+Metode terbaik: Opening
+Alasan: Memisahkan biji beras yang terlalu berdekatan dan menghilangkan noise tanpa merusak bentuk.
+
+Gambar B.jpeg (huruf M dengan noise)
+Tujuan:
+Menghapus bintik noise di latar belakang dan mempertahankan bentuk huruf.
+
+Analisis metode:
+
+Erosi: Menipiskan huruf M, sebagian struktur hilang. Tidak cocok.
+
+Dilasi: Memperbesar huruf M dan noise juga ikut membesar. Tidak cocok.
+
+Opening: Menghilangkan bintik kecil dan tetap menjaga bentuk huruf. Cocok.
+
+Closing: Mengisi lubang kecil, bisa membuat huruf makin utuh. Alternatif.
+
+Metode terbaik: Opening
+Alasan: Efektif menghapus noise kecil dan mempertahankan bentuk utama huruf.
+
+Kesimpulan umum:
+Metode terbaik untuk kedua gambar: Opening
+Mengapa:
+
+Opening adalah kombinasi erosi diikuti dilasi.
+
+Cocok untuk menghilangkan noise kecil dan menjaga struktur utama tetap utuh.
+
+Hasil terbaik terlihat di kedua gambar dibanding metode lain.
